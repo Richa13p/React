@@ -11,23 +11,22 @@ const applicants = [ {
   },
 
 ];
-//rendering list 
-const Forth = () => {
+const Fifth = () => {
   return (
     <>
-       { applicants.map((data) =>{
-            return(
-                <div>
-                    Application.Name :{data.name}
-                </div>
-            )
-        })}
-        
-    </>
+   {
+    applicants.map((data)=>{
+        return(
+            <div key={data.id}>
+            <p> Application Name :{data. name}</p>
+            <p> Application location : {data. location}</p>
+            <p> Application participated : {data.hackathons}</p>
 
-  
-
+            </div>
+        ) })
+      }
+   </>
   )
 }
 
-export default Forth
+export default Fifth
